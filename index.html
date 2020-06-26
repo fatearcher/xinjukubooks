@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>新宿書房 | ホーム</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function () {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが100pxに達したらボタン表示
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a id="jump"></a>
+    <header>
+        <div id="header_inner">
+            <img src="images/logo_shinjuku.png" alt="新宿書房" id="logo">
+
+            <nav id="gnav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">新宿書房について</a></li>
+                    <li><a href="newbooks.html">新入荷本のご案内</a></li>
+                    <li><a href="access.html">アクセスマップ・営業時間</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="home">
+        <img src="images/mainvisual_shinjuku.jpg" alt="新宿書房は古本">
+    </main>
+
+    <p id="page-top"><a href="#jump"><img src="/images/totop.png" alt=""></a></p>
+
+    <footer>
+        Copyright &copy; 2020 新
+        宿書房 All Rights Reserved.
+        新宿書房について
+    </footer>
+
+
+</body>
+
+</html>

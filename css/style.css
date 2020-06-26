@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 255, 255, 0.85);
+    box-shadow: 0 0 3px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+div#header_inner {
+    width: 1000px;
+    height: 90px;
+    /* background-color: darkseagreen; */
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+img#logo {
+    margin: 22px 0 0 0;
+}
+
+nav#gnav {
+    margin: 37px 0 0 0;
+}
+
+nav#gnav ul {
+    width: 589px;
+    display: flex;
+    /*浮动*/
+    justify-content: space-between;
+    /* */
+    /* background-color: aquamarine; */
+}
+
+nav#gnav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 4px 6px;
+    /* !!让文字和外框不会接触到*/
+    transition: 0.5s;
+    /* !!变化速度*/
+}
+
+nav#gnav a:hover {
+    background-color: black;
+    color: #fff;
+    border-radius: 30px;
+    /* !!外框弧度*/
+}
+
+main#home {
+    width: 1000px;
+    margin: 110px auto 32px auto;
+}
+
+footer {
+    background-color: #000;
+    color: #D9D9D9;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+/*新宿書房について　about.html*/
+
+div#midashi_about {
+    width: 100%;
+    height: 75px;
+    background-color: #d7a23d;
+    margin: 90px 0 0 0;
+}
+
+h2 {
+    width: 1000px;
+    margin: 0 auto;
+    text-indent: 20px;
+    line-height: 75px;
+    font-family: serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+}
+
+p#kuzu {
+    width: 1000px;
+    /* background-color: #fd4a4d; */
+    margin: 20px auto 50px auto;
+}
+
+span.kuzunow {
+    font-weight: bold;
+}
+
+p#kuzu a {
+    color: #000;
+    text-decoration: none;
+}
+
+p#kuzu a:hover {
+    text-decoration: underline;
+}
+
+main#second {
+    width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+h3.about {
+    font-size: 18px;
+    color: #d7a23d;
+    margin: 0 0 14px 0;
+    font-family: serif;
+}
+
+p.text {
+    line-height: 175%;
+    margin: 0 0 10px 50px;
+    font-family: sans-serif;
+}
+
+ul.tenji {
+    line-height: 175%;
+    margin: 0 0 10px 50px;
+    font-family: sans-serif;
+}
+
+/*新入荷本のご案内  newbooks.html*/
+
+div#midashi_new {
+    width: 100%;
+    height: 75px;
+    background-color: #21b7c3;
+    margin: 90px 0 0 0;
+}
+
+h3.new {
+    font-size: 18px;
+    color: #21b7c3;
+    margin: 0 0 14px 0;
+    font-family: serif;
+}
+
+ul#ichiran {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul#ichiran {
+    margin: 0 0 100px 0;
+}
+
+/*アクセスマップ・営業時間  access.html*/
+div#midashi_access {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(119, 182, 48);
+    margin: 90px 0 0 0;
+}
+
+h3.access {
+    font-size: 18px;
+    color: rgb(119, 182, 48);
+    margin: 0 0 14px 0;
+    font-family: serif;
+}
+
+iframe {
+    margin: 0 0 50px 0;
+}
+
+p.access {
+    line-height: 30px;
+}
+
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
