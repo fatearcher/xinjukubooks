@@ -6,9 +6,32 @@
     <title>新宿書房 | 新宿書房について</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function () {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが100pxに達したらボタン表示
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
 </head>
 
 <body>
+    <a id="jump"></a>
     <header>
         <div id="header_inner">
 
@@ -53,6 +76,7 @@
         </p>
     </main>
 
+    <p id="page-top"><a href="#jump"><img src="images/totop.png"></img></a></p>
 
     <footer>
         Copyright &copy; 2020 新
